@@ -1,0 +1,32 @@
+banned_words_default:
+  - "hate"
+  - "violence"
+  - "illegal"
+  # Note: "harmful" removed - too common in legitimate contexts
+  # Add custom banned words in your spec's style.banned_words if needed
+
+disallowed_categories:
+  - "medical_advice"
+  - "legal_advice"
+  - "financial_advice"
+
+pii:
+  enabled: true
+  patterns:
+    email: true
+    phone: true
+    ssn: false  # Can enable later
+
+prompt_injection:
+  enabled: true
+  patterns:
+    - "ignore previous instructions"
+    - "reveal system prompt"
+    - "forget everything"
+    - "new instructions"
+
+compliance:
+  facts_mode_requires_sources: true
+  block_on_pii: false  # warn by default
+  block_on_banned_words: false  # warn by default
+

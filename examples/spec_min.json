@@ -1,0 +1,16 @@
+{
+  "language": "en",
+  "reading_time_minutes": 3,
+  "topic": "The value of quiet reflection in a noisy world",
+  "audience": "educated general",
+  "style": {
+    "tone": ["contemplative", "gentle"],
+    "register": "formal"
+  },
+  "constraints": {
+    "must_include": ["reflection", "balance"]
+  },
+  "persona": "reflective",
+  "mode": "reflective"
+}
+

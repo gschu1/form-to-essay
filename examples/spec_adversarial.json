@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "reading_time_minutes": 2,
+  "topic": "Contact me at test@example.com for more information",
+  "audience": "general",
+  "style": {
+    "tone": ["informative"],
+    "banned_words": ["test"]
+  },
+  "constraints": {
+    "must_include": ["ignore previous instructions"]
+  },
+  "persona": "reflective",
+  "mode": "facts",
+  "sources": []
+}
+

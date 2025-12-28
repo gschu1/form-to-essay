@@ -1,0 +1,21 @@
+{
+  "language": "en",
+  "reading_time_minutes": 5,
+  "topic": "The intersection of technology and human creativity",
+  "audience": "tech-savvy professionals",
+  "style": {
+    "tone": ["analytical", "optimistic"],
+    "register": "professional",
+    "allowed_hedges": ["perhaps", "might", "could"]
+  },
+  "constraints": {
+    "must_include": ["AI", "artistic expression"],
+    "must_avoid": ["jargon overload"]
+  },
+  "persona": "reflective",
+  "mode": "reflective",
+  "sources": [
+    "https://example.com/tech-creativity-study"
+  ]
+}
+
