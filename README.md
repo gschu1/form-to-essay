@@ -1,3 +1,6 @@
+> 🚧 **Reference/Demo Repo**  
+> This repository is a demo/reference implementation. The hosted product adds storage, RAG, optimizers, and reliability layers.
+
 # JSON to Essay
 
 A client-safe demo project that demonstrates end-to-end LLM pipeline delivery: **structured input (JSON) → generated essay (Markdown) → compliance checks → auditable report + saved artifacts**.
@@ -46,6 +49,49 @@ streamlit run ui/app.py
 ```
 
 Then open your browser to `http://localhost:8501` and use the form to generate essays without writing JSON.
+
+## What This Repo Is / Is Not
+
+**This repo IS:**
+- A CLI + Streamlit demo/reference implementation
+- A stable spec→artifacts contract (input_spec.json, essay.md, compliance_report.json, meta.json)
+- Provider abstraction (MockProvider, OpenAIProvider)
+- Compliance checking framework (PII, prompt injection, banned words, factual claims)
+- Complete test suite with examples
+
+**This repo IS NOT:**
+- A production service with user accounts or authentication
+- A system with persistent storage or run history
+- A RAG (Retrieval-Augmented Generation) implementation
+- An optimization loop or multi-pass revision system
+- A system with SLOs, monitoring, billing, or production hardening
+
+## Why Open Source?
+
+This repository serves as:
+- **Portfolio artifact**: Demonstrates end-to-end LLM pipeline design, compliance thinking, and clean architecture
+- **Reference implementation**: Shows how to structure a spec→essay→compliance pipeline
+- **Learning resource**: Open code for studying LLM integration patterns, compliance checks, and provider abstraction
+
+The hosted product (private repo) adds production features: authentication, persistent storage, RAG for facts mode, multi-pass optimizers, analytics, and reliability layers.
+
+## Roadmap (Public vs Private)
+
+**Public Repo (This Repository):**
+- Keep spec→artifacts contract stable
+- Small UX improvements to Streamlit UI
+- Enhanced quality/compliance reports
+- Template scaffolding (if useful for community)
+- Additional example specs
+
+**Private Product (Separate Repository):**
+- Authentication and user management
+- Persistent run history and storage
+- RAG (Retrieval-Augmented Generation) for facts mode
+- Multi-pass optimizers and revision loops
+- Analytics dashboard and usage metrics
+- Production hardening (SLOs, monitoring, alerting)
+- Billing and subscription management
 
 ## Features
 
@@ -363,11 +409,15 @@ pytest --cov=json_to_essay tests/
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**License Note:** The public demo code is permissive (MIT). The product value in the hosted service comes from proprietary reliability layers, optimization algorithms, and production infrastructure that live in a separate private repository.
 
 ## Contributing
 
-This is a demo project. For production use, consider:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. This is a reference/demo repo - contributions should align with keeping it a clean, educational artifact.
+
+For production use, consider:
 - Enhanced PII detection
 - More sophisticated prompt injection detection
 - RAG integration for facts mode
